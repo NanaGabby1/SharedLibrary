@@ -14,5 +14,5 @@ deploy adapters: [tomcat9(credentialsId: '3e78adb9-a385-4254-a1f1-2cda4ac89aca',
 }
 def runSelenium(path)
 {
-  sh "java -jar /home/ubuntu/.jenkins/workspace/"${path}/testing.jar"
+  sh 'java -jar /home/ubuntu/.jenkins/workspace/"${path}"/testing.jar'
 }
